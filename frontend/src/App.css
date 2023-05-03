@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.color {
+  background-color: #000000;
+  background-color: #292a2d;
+  background-color: #646569;
+  background-color: #b6b7b9;
+  background-color: #5a0b0e;
+  background-color: #a61218;
+  background-color: #e42129;
+  background-color: #cfc101;
+  background-color: #e6bf01;
+}
+
+body {
+  background-color: #000000;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Cinzel', serif;
+}
