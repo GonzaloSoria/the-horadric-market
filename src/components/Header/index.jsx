@@ -1,5 +1,3 @@
-import bullet from '../../assets/bullet.png';
-import user from '../../assets/user.png';
 import './Header.css';
 
 export const Header = () => {
