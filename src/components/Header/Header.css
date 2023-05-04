@@ -1,6 +1,6 @@
 header {
-    background-color: #000000;
-    border-bottom: 1px solid #3A3A3A;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 20px;
     z-index: 3;
 }
 .logo {
@@ -76,9 +76,36 @@ header {
     text-transform: uppercase;
     transition: 0.4s ease;
     font-family: 'Cinzel', serif;
+    opacity: 1;
+}
+.bullet {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    visibility: hidden;
+}
+.user {
+    width: 30px;
+}
+.log-in {
+    padding: 0;
+}
+.log-in a {
+    padding: 15px 30px;
+    background-color: #5a0b0e;
+}
+.menu-container li a {
+    display: flex;
+    align-items: center;
 }
 .menu-container li a:hover {
     color: #e6bf01;
+}
+.menu-container li a:hover {
+    color: #e6bf01;
+}
+.menu-container li a:hover img {
+    visibility: visible;
 }
 #checkbox:checked ~ .menu-container {
     transform: translateX(20%);
@@ -86,6 +113,7 @@ header {
 .hidden-content {
     display: none !important;
 }
+
 @media screen and (min-width: 1200px) {
     .checkbox-label {
         display: none;
@@ -99,11 +127,12 @@ header {
         border: 0;
     }
     .menu-container li {
-        padding: 0 80px 0 0;
-        font-size: 18px;
+        padding: 0 50px 0 0;
+        font-size: 15px;
         margin-bottom: 0;
     }
     .icon-container {
         margin-bottom: 0;
     }
+    
 }

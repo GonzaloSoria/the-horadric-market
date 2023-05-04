@@ -1,9 +1,12 @@
+import bullet from '../../assets/bullet.png';
+import user from '../../assets/user.png';
 import './Header.css';
 
 export const Header = () => {
   return (
     <>
-        <header className="px-5 sm:px-10 py-5 fixed top-0 w-full">
+    <div className="container mx-auto">
+    <header className="container mx-auto px-5 sm:px-10 py-5 fixed top-8 w-full">
             <nav className="container mx-auto">
                 <div className="flex justify-between items-center">
                     <div className="flex justify-start items-center">
@@ -17,16 +20,34 @@ export const Header = () => {
                             <span className="span3"></span>
                         </label>
                         <ul className="menu-container">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/info">Objetos</a></li>
-                            <li><a href="/info">Perfiles</a></li>
-                            <li><a href="/info">Noticias</a></li>
-                            <li><a href="/info">Nosotros</a></li>
+                            <li className='flex justify-center items-baseline'>
+                                <a href="/info">Home<img className='bullet mb-0' src={bullet} /></a>
+                            </li>
+                            <li className='flex justify-center items-center'>
+                                <a href="/info">Objetos<img className='bullet mb-0' src={bullet} /></a>
+                            </li>
+                            <li className='flex justify-center items-center'>
+                                <a href="/info">Perfiles<img className='bullet mb-0' src={bullet} /></a>
+                            </li>
+                            <li className='flex justify-center items-center'>
+                                <a href="/info">Clases<img className='bullet mb-0' src={bullet} /></a>
+                            </li>
+                            <li className='flex justify-center items-center'>
+                                <a href="/info">Nosotros<img className='bullet mb-0' src={bullet} /></a>
+                            </li>
+                            <li className='flex justify-center items-center log-in'>
+                                <a href="/info">Log in</a>
+                            </li>
+                            {/* <li className='flex justify-center items-center'>
+                                <a href="/info"><img className='user' src={user} /></a>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+    </div>
+        
     </>
   )
 }
