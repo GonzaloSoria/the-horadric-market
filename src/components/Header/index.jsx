@@ -21,26 +21,17 @@ export const Header = () => {
                         </label>
                         <ul className="menu-container">
                             <li className='flex justify-center items-baseline'>
-                                <a href="/info">Home<img className='bullet mb-0' src={bullet} /></a>
+                                <a href="/info">Home</a>
                             </li>
                             <li className='flex justify-center items-center'>
-                                <a href="/info">Objetos<img className='bullet mb-0' src={bullet} /></a>
+                                <a href="/info">Objetos</a>
                             </li>
                             <li className='flex justify-center items-center'>
-                                <a href="/info">Perfiles<img className='bullet mb-0' src={bullet} /></a>
-                            </li>
-                            <li className='flex justify-center items-center'>
-                                <a href="/info">Clases<img className='bullet mb-0' src={bullet} /></a>
-                            </li>
-                            <li className='flex justify-center items-center'>
-                                <a href="/info">Nosotros<img className='bullet mb-0' src={bullet} /></a>
+                                <a href="/info">Nosotros</a>
                             </li>
                             <li className='flex justify-center items-center log-in'>
                                 <a href="/info">Log in</a>
                             </li>
-                            {/* <li className='flex justify-center items-center'>
-                                <a href="/info"><img className='user' src={user} /></a>
-                            </li> */}
                         </ul>
                     </div>
                 </div>
