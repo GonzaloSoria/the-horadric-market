@@ -8,10 +8,6 @@ export default {
     extend: {},
     colors: {
       "first": "#D2C8AE"
-    },
-    fontFamily: {
-      "cinzel": "'Cinzel', serif;",
-      "roboto": "'Roboto', sans-serif"
     }
   },
   plugins: [],
