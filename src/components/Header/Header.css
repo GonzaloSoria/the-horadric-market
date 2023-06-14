@@ -121,6 +121,10 @@ header {
     background-color: #5a0b0e;
 }
 
+.line {
+    margin-bottom: -6px;
+}
+
 .menu-container li a {
     display: flex;
     align-items: center;

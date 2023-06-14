@@ -1,0 +1,11 @@
+.whats-is-container {
+    background-image: url('../../assets/menu-bg.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+.classes {
+    width: 700px;
+    -webkit-filter: drop-shadow(5px 0px 5px #171717);
+    filter: drop-shadow(5px 0px 5px #171717);
+}

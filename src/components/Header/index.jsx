@@ -7,9 +7,9 @@ export const Header = () => {
 
   return (
     <>
-        <header className="py-5 fixed top-0 w-full">
+        <header className="pt-5 fixed top-0 w-full">
             <nav className="container mx-auto">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center pb-5">
                     <div className="flex justify-start items-center">
                         <a href="/" className="logo pr-10">The Horadric Market</a>
                     </div>
@@ -40,6 +40,7 @@ export const Header = () => {
                         </ul>
                     </div>
                 </div>
+                <img src="https://eu.diablo3.blizzard.com/static/images/ui/blog-separator-2.png" className='text-center mx-auto line' />
             </nav>
         </header>        
     </>
