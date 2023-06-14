@@ -1,6 +1,12 @@
 .hero-container {
     background-image: url('https://wallpaperaccess.com/full/1954791.jpg');
     background-position: top;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
+
+.diablo-logo {
+    -webkit-filter: drop-shadow(5px 5px 2px #000000);
+    filter: drop-shadow(5px 5px 2px #000000);
+}
+

@@ -4,3 +4,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.classes {
+    width: 700px;
+    -webkit-filter: drop-shadow(5px 0px 2px #000000);
+    filter: drop-shadow(5px 0px 2px #000000);
+}

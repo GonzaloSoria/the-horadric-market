@@ -1,7 +1,10 @@
 import profile from '../../assets/profile.jpg';
+import login from '../../assets/login.png';
+import bullet from '../../assets/bullet.png';
 import './Header.css';
 
 export const Header = () => {
+
   return (
     <>
         <header className="py-5 fixed top-0 w-full">
@@ -20,17 +23,20 @@ export const Header = () => {
                         </label>
                         <ul className="menu-container">
                             <li className='flex items-baseline'>
-                                <a href="/info">Inicio</a>
+                                <a href="/info" className='anchor'><img src={bullet} alt="bullet" className='bullet'/>Inicio</a>
                             </li>
                             <li className='flex items-center'>
-                                <a href="/info">Objetos</a>
+                                <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Objetos</a>
                             </li>
                             <li className='flex items-center'>
-                                <a href="/info">Nosotros</a>
+                                <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Nosotros</a>
                             </li>
-                            <li className='flex items-center log-in'>
+                            <li className='flex items-center'>
+                                <a href=""><img src={login} alt="login" className='login'/></a>
+                            </li>
+                            {/* <li className='flex items-center log-in'>
                                 <a href="/info">Iniciar sesión</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
