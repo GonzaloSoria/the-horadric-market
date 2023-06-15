@@ -9,6 +9,7 @@ export const Community = () => {
                 <a href="#" className='iniciar-sesion text-first'>Iniciar sesión</a>
             </div>
         </div>
+        <img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt77f4425de611b362/bltd90501272a3e9db1/6166074c518fba500628a1d5/stone-divider-btm-max.jpg?auto=webp" alt="" />
     </>
   )
 }

@@ -8,11 +8,12 @@ export const Benefits = () => {
             <div className="container mx-auto">
               <div className="grid grid-cols-2 gap-4">
               <div className='flex flex-col justify-center'>
-                  <h2 className='text-first text-4xl font-bold mb-8'>PRINCIPALES BENEFICIOS:</h2>
-                  <p className='font-roboto text-first text-2xl mb-2'><strong>1.</strong> Acceso a objetos únicos</p>
-                  <p className='font-roboto text-first text-2xl mb-2'><strong>2.</strong> Conexión con la comunidad de jugadores</p>
-                  <p className='font-roboto text-first text-2xl mb-2'><strong>3.</strong> Interacciones seguras y eficientes</p>
-                  <p className='font-roboto text-first text-2xl mb-8'><strong>4.</strong> Control de tus objetos a intercambiar</p>
+                  <h2 className='text-first text-4xl font-bold mb-8 uppercase'>Beneficios principales:</h2>
+                  <p className='font-roboto text-first text-2xl mb-2'><strong>1.</strong> Accede con tu cuenta de Google, <strong>sin registro</strong></p>
+                  <p className='font-roboto text-first text-2xl mb-2'><strong>2.</strong> Acceso a objetos únicos</p>
+                  <p className='font-roboto text-first text-2xl mb-2'><strong>3.</strong> Conexión con la comunidad de jugadores</p>
+                  <p className='font-roboto text-first text-2xl mb-2'><strong>4.</strong> Interacciones seguras y eficientes</p>
+                  <p className='font-roboto text-first text-2xl mb-8'><strong>5.</strong> Control de tus objetos a intercambiar</p>
                   <p className='font-roboto text-first text-2xl mb-8'><strong>¡Únete hoy y transforma tu experiencia en Diablo IV!</strong></p>
                 </div>
                 <div className='flex flex-col justify-center items-center'>

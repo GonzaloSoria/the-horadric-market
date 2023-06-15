@@ -14,8 +14,8 @@ export const WhatsIs = () => {
                 </div>
                 <div className='flex flex-col justify-center'>
                   <h2 className='text-first text-4xl font-bold mb-8'>¿QUE ES THE HORADRIC MARKET?</h2>
-                  <p className='font-roboto text-first text-2xl mb-8'>¡Bienvenido a la plataforma innovadora que transforma la forma en que los jugadores de Diablo IV intercambian objetos!</p>
-                  <p className='font-roboto text-first text-2xl mb-8'>Conectamos a la comunidad de jugadores y les simplificamos encontrar, compartir y negociar luego en el juego objetos de manera fácil, rápida y segura.</p>
+                  <p className='font-roboto text-first text-2xl mb-8'>¡Bienvenido a la plataforma innovadora que transforma la manera en que los jugadores de Diablo IV intercambian objetos!</p>
+                  <p className='font-roboto text-first text-2xl mb-8'>Conectamos a la comunidad de jugadores y les simplificamos encontrar y compartir objetos para luego negociar en el juego de manera fácil, rápida y segura.</p>
                 </div>
               </div>
             </div>

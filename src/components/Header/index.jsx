@@ -29,11 +29,15 @@ export const Header = () => {
                                 <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Objetos</a>
                             </li>
                             <li className='flex items-center'>
-                                <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Nosotros</a>
+                                <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Información</a>
                             </li>
                             <li className='flex items-center'>
-                                <a href=""><img src={login} alt="login" className='login'/></a>
+                                <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Log in</a>
                             </li>
+                            {/* <li className='flex items-center'>
+                                <a href=""><img src={login} alt="login" className='login'/></a>
+                            </li> */}
+
                             {/* <li className='flex items-center log-in'>
                                 <a href="/info">Iniciar sesión</a>
                             </li> */}
