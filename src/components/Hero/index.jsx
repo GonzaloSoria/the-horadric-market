@@ -1,5 +1,4 @@
 import diabloIVLogo from '../../assets/diabloIV-logo.png';
-import divider from '../../assets/divider.png';
 import './Hero.css';
 
 export const Hero = () => {
@@ -13,7 +12,6 @@ export const Hero = () => {
                 </div>
             </div>
         </div>
-        <img src={divider} alt="" />
     </>
   )
 }

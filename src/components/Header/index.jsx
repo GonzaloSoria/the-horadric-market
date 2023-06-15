@@ -1,10 +1,13 @@
 import profile from '../../assets/profile.jpg';
-import login from '../../assets/login.png';
 import bullet from '../../assets/bullet.png';
+import { handle_sign_in } from '../../utils/login';
+import { useLoginContext } from '../../context/LoginContext';
 import './Header.css';
 
-export const Header = () => {
 
+export const Header = () => {
+    const { loged } = useLoginContext();
+    
   return (
     <>
         <header className="pt-5 fixed top-0 w-full">
@@ -17,30 +20,34 @@ export const Header = () => {
                         <input type="checkbox" id="checkbox" />
                         <label htmlFor="checkbox" className="checkbox-label">
                             <img src={profile} alt="menu" className='menu-icon' />
-                            {/* <span className="span1"></span>
+                            <span className="span1"></span>
                             <span className="span2"></span>
-                            <span className="span3"></span> */}
+                            <span className="span3"></span>
                         </label>
                         <ul className="menu-container">
                             <li className='flex items-baseline'>
-                                <a href="/info" className='anchor'><img src={bullet} alt="bullet" className='bullet'/>Inicio</a>
+                                <a href="/" className='anchor'><img src={bullet} alt="bullet" className='bullet'/>Inicio</a>
                             </li>
                             <li className='flex items-center'>
-                                <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Objetos</a>
+                                <a href="/objetos"><img src={bullet} alt="bullet" className='bullet'/>Objetos</a>
                             </li>
                             <li className='flex items-center'>
-                                <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Información</a>
+                                <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Info</a>
                             </li>
                             <li className='flex items-center'>
-                                <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Log in</a>
+                                <a href="/donar"><img src={bullet} alt="bullet" className='bullet'/>Donar</a>
                             </li>
-                            {/* <li className='flex items-center'>
-                                <a href=""><img src={login} alt="login" className='login'/></a>
-                            </li> */}
-
-                            {/* <li className='flex items-center log-in'>
-                                <a href="/info">Iniciar sesión</a>
-                            </li> */}
+                            {
+                                loged ? 
+                                <li className='flex items-center'>
+                                    <a style={{cursor: 'pointer'}} onClick={handle_sign_in}><img src={bullet} alt="bullet" className='bullet'/>Log out</a>
+                                </li>
+                                :
+                                <li className='flex items-center'>
+                                    <a style={{cursor: 'pointer'}} onClick={handle_sign_in}><img src={bullet} alt="bullet" className='bullet'/>Log in</a>
+                                </li>
+                            }
+                            
                         </ul>
                     </div>
                 </div>

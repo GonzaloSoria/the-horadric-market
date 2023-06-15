@@ -1,19 +1,21 @@
-import './App.css'
-import { Benefits } from './components/Benefits';
-import { Community } from './components/Community';
+import { BrowserRouter } from 'react-router-dom';
+import { Footer } from './components/Footer';
 import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { WhatsIs } from './components/WhatsIs';
+import { LoginContextProvider } from './context/LoginContext';
+import { Home } from './routes/Home';
+import './App.css';
 
 export const App = () => {
 
   return (
     <>
-      <Header />
-      <Hero />
-      <WhatsIs />
-      <Benefits />
-      <Community />
+      <BrowserRouter>
+      <LoginContextProvider>
+        <Header />
+        <Home />
+        <Footer />
+      </LoginContextProvider>
+      </BrowserRouter>
     </>
   );
 };

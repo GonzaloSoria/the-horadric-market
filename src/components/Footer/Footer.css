@@ -1,0 +1,13 @@
+.footer-nav {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav li {
+    padding: 0 10px;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    color: #D2C8AE;
+}
