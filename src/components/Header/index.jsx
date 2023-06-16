@@ -1,12 +1,16 @@
 import profile from '../../assets/profile.jpg';
 import bullet from '../../assets/bullet.png';
-import { handle_sign_in } from '../../utils/login';
-import { useLoginContext } from '../../context/LoginContext';
+import { useAuthContext } from '../../context/AuthContext';
 import './Header.css';
+import { useEffect } from 'react';
 
 
 export const Header = () => {
-    const { loged } = useLoginContext();
+    const { user, handleSignIn, handleSignOut } = useAuthContext();
+
+    useEffect(() => {
+        
+    }, [])
     
   return (
     <>
@@ -29,22 +33,22 @@ export const Header = () => {
                                 <a href="/" className='anchor'><img src={bullet} alt="bullet" className='bullet'/>Inicio</a>
                             </li>
                             <li className='flex items-center'>
-                                <a href="/objetos"><img src={bullet} alt="bullet" className='bullet'/>Objetos</a>
+                                <a href="/objects"><img src={bullet} alt="bullet" className='bullet'/>Objetos</a>
                             </li>
                             <li className='flex items-center'>
                                 <a href="/info"><img src={bullet} alt="bullet" className='bullet'/>Info</a>
                             </li>
                             <li className='flex items-center'>
-                                <a href="/donar"><img src={bullet} alt="bullet" className='bullet'/>Donar</a>
+                                <a href="/donate"><img src={bullet} alt="bullet" className='bullet'/>Donar</a>
                             </li>
                             {
-                                loged ? 
+                                user ? 
                                 <li className='flex items-center'>
-                                    <a style={{cursor: 'pointer'}} onClick={handle_sign_in}><img src={bullet} alt="bullet" className='bullet'/>Log out</a>
+                                    <a style={{cursor: 'pointer'}} onClick={handleSignOut}><img src={bullet} alt="bullet" className='bullet'/>Log out</a>
                                 </li>
                                 :
                                 <li className='flex items-center'>
-                                    <a style={{cursor: 'pointer'}} onClick={handle_sign_in}><img src={bullet} alt="bullet" className='bullet'/>Log in</a>
+                                    <a style={{cursor: 'pointer'}} onClick={handleSignIn}><img src={bullet} alt="bullet" className='bullet'/>Log in</a>
                                 </li>
                             }
                             

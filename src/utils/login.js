@@ -1,19 +1,18 @@
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithPopup, signInWithRedirect } from 'firebase/auth';
 import { auth } from '../firebase/config';
 
 
 //Sign in with Google Provider Popup
 const google_provider = new GoogleAuthProvider();
 
-export const handle_sign_in = async (loged) => {
+export const handle_sign_in = async (setLoged) => {
     try {
         const res = await signInWithPopup(auth, google_provider);
-        console.log(res);
-        if(res.uid) {
-            loged(true);
+        if(res != undefined) {
+            setLoged(true);
             console.log('hay acceso');
         } else {
-            loged(false);
+            setLoged(false);
             console.log('No Hay acceso');
         }
     } catch (error) {

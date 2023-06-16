@@ -1,21 +1,18 @@
-import { BrowserRouter } from 'react-router-dom';
+import { AuthContextProvider } from './context/AuthContext';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
-import { LoginContextProvider } from './context/LoginContext';
-import { Home } from './routes/Home';
+import { MyRoutes } from './routers/routes';
 import './App.css';
 
 export const App = () => {
 
   return (
     <>
-      <BrowserRouter>
-      <LoginContextProvider>
+      <AuthContextProvider>
         <Header />
-        <Home />
+        <MyRoutes />
         <Footer />
-      </LoginContextProvider>
-      </BrowserRouter>
+      </AuthContextProvider>
     </>
   );
 };
