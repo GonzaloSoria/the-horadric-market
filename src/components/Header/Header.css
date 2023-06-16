@@ -4,10 +4,6 @@ header {
     z-index: 3;
 }
 
-.login {
-    width: 30px;
-}
-
 .logo {
     color: #D2C8AE;
     font-family: 'Cinzel', serif;
@@ -101,6 +97,30 @@ header {
     opacity: 1;
 }
 
+.menu-container li a {
+    display: flex;
+    align-items: center;
+}
+
+.menu-container li a:hover {
+    color: #e6bf01;
+    position: relative;
+}
+
+.menu-container li a:hover::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: -20px;
+    background-image: url('../../assets/tiny-bullet.png');    
+    width: 15px;
+    height: 15px;
+}
+
+/* .menu-container li a:hover img {
+    visibility: visible;
+} */
+
 .bullet {
     width: 15px;
     height: 15px;
@@ -125,25 +145,6 @@ header {
 .line {
     margin-bottom: -6px;
 }
-
-.menu-container li a {
-    display: flex;
-    align-items: center;
-}
-
-.menu-container li a:hover {
-    color: #e6bf01;
-}
-
-.menu-container li a:hover {
-    color: #e6bf01;
-}
-
-.menu-container li a:hover img {
-    visibility: visible;
-}
-
-
 
 #checkbox:checked ~ .menu-container {
     transform: translateX(-30%);
